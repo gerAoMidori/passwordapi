@@ -35,4 +35,7 @@ And it works but I'm not sure it's the best solution
 
 ```bash
  npm i -g vercel
+ #and
+ vercel deploy
 ```
+And follow instructions
