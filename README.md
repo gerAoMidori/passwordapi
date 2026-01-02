@@ -39,3 +39,7 @@ And it works but I'm not sure it's the best solution
  vercel deploy
 ```
 And follow instructions
+
+## Test the API
+
+Go to [API hosted with vercel](https://password-api-nine.vercel.app)
