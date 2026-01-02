@@ -16,3 +16,17 @@ import re
 ```
 
 ## Building the API
+I decided to build a home page for the API and to render the HTML Jinja must be installed.
+Now that I'm thinking of it it's usually installed when we install Flask or Django
+
+```bash
+uv add jinja2
+```
+### Use a bit of tailwindCSS
+
+Learned tailwind css recently so I decided to see if I could use it without installing complete setup  
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+```
+

@@ -31,7 +31,7 @@ class PassWordManager:
                 items += random.sample(string.ascii_uppercase, vals[0])
                 vals.pop(0)
             if digits:
-                items += random.sample(string.digits, vals[0])
+                items += random.choices(string.digits, k = vals[0])
                 vals.pop(0)
             if special:
                 items += random.sample(string.punctuation, vals[0])
