@@ -1,34 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PasswordAPI</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <strong><h1 class="p-12 bg-red-50 text-3xl"> Welcome to PasswordAPI</h1></strong>
-    <div class="m-8">
-        <h2 class ="text-3xl">Check your password strength</h2>
-        <p >To check if your password is strong or not just go to <span class = "font-bold italic">/check/{Your password}</span> and it should be ok</p>
 
+<body class="items-center justify-center">
+    <strong>
+        <h1 class="p-12 bg-gray-300 text-3xl">Welcome to PasswordAPI</h1>
+    </strong>
+    <div class="m-8">
+        <h2 class="font-bold text-3xl">Check your password strength</h2>
+        <p>
+            To check if your password is strong or not just go to
+            <span class="font-bold italic">/check/{Your password}</span> and it
+            should be ok
+        </p>
     </div>
 
     <div class="m-8">
-        <h2 class ="text-3xl">Create a password</h2>
-        <p >To create your password go to <span class = "font-bold italic">/crate/[query]</span></p>
-        <ul class ="mx-12 list-disc">
-            <li>Type <span class = "font-bold">?</span> and then the first params you want to change</li>
-            <li><span class = "font-bold">length=30</span> for a password of 30 characters</li>
-            <li><span class = "font-bold">upper</span> or <span class = "font-bold">digits</span> or 
-                <span class = "font-bold">special</span> to choose the option and set to <span class = "font-bold">true</span> or 
-            <span class = "font-bold">false</span></li>
-            <li>To add more params you just need to put before <span class = "font-bold">&</span></li>
-            <li>Example go to <span class = "font-bold"> http://localhost/create/?length=20&upper=true&digits=true</span></li>
+        <h2 class="font-bold text-3xl">Create a password</h2>
+        <p class="py-2">
+            To create your password go to
+            <span class="font-bold italic">/crate/[query]</span>
+        </p>
+        <ul class="mx-12 list-disc">
+            <li>
+                Type <span class="font-bold">?</span> and then the first params you
+                want to change
+            </li>
+            <li>
+                <span class="font-bold">length=30</span> for a password of 30
+                characters
+            </li>
+            <li>
+                <span class="font-bold">upper</span> or
+                <span class="font-bold">digits</span> or
+                <span class="font-bold">special</span> to choose the option and set to
+                <span class="font-bold">true</span> or
+                <span class="font-bold">false</span>
+            </li>
+            <li>
+                To add more params you just need to put before
+                <span class="font-bold">&</span>
+            </li>
+            <li>
+                Example go to
+                <span class="font-bold">
+                    http://localhost/create/?length=20&upper=true&digits=true</span>
+            </li>
         </ul>
-
     </div>
-    </body>
+</body>
+
 </html>
