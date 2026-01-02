@@ -12,14 +12,10 @@ templates = Jinja2Templates("templates")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-@app.get("/", response_class=HTMLResponse)
-
-def home(request: Request):
-    return templates.TemplateResponse(
-        "index.html",
-        {"request": request, "title": "FastAPI"}
-    )
-
+@app.get("/")
+def home():
+    return "Welcome"
+    
 @app.get("/check/{password}")
 async def check(password : str):
     return {password : PassWordManager().check_strength(password=password)}
