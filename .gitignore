@@ -11,3 +11,5 @@ wheels/
 
 #Personal files
 test.py
+
+.vercel

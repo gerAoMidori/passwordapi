@@ -29,4 +29,10 @@ Learned tailwind css recently so I decided to see if I could use it without inst
 ```html
 <script src="https://cdn.tailwindcss.com"></script>
 ```
+And it works but I'm not sure it's the best solution
 
+## Deploying on vercel
+
+```bash
+ npm i -g vercel
+```
